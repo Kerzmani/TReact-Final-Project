@@ -26,7 +26,7 @@
                   <a  href="#pricing" class="nav__link link__hover-effect">Pricing</a>
                   <a class="nav__link link__hover-effect">Contact Us</a>
                   <a class="nav__link login link__hover-effect">Login</a>
-                  <a class="nav__link nav__link__primary">Sign Up</a>
+                  <a class="nav__link nav__link--primary">Sign Up</a>
                 </div class="nav__links">
                 <button class="btn__menu" onclick="openMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -51,7 +51,7 @@
             <div class="modal__links">
                 <a class="modal__link">About</a>
                 <a class="modal__link">Blog</a>
-                <a  href="#pricing" class="modal__link">Pricing</a>
+                <a  href="#pricing" class="modal__link" onclick="closeMenu()">Pricing</a>
                 <a class="modal__link">Contact Us</a>
                 <a class="modal__link">Login</a>
                 <a class="modal__link modal__link__primary">Sign Up</a>
@@ -65,7 +65,11 @@
             <div class="container">
                 <div class="row">
                     <div class="header__description">
-                      <h1 class="header__description__title">Beautiful React <br> Templates <span class="purple">For You</span></h1>
+                      <h1 class="header__description__title">
+                        <span class="title-line1">Beautiful React</span>
+                        <span class="title-line2">Templates</span>
+                        <span class="purple">for you.</span>
+                      </h1>
                       <p class="header__description__para">
                         Our templates are easy to setup, understand, and customize.<br> Offering fully modular components with a variety of pages and components.
                       </p>
@@ -110,7 +114,7 @@
                         <div class="feature">
                             <img class="feature__img" src="/assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg">
                             <div class="feature__description">
-                                <h3 class="feature__tittle"> 
+                                <h3 class="feature__title"> 
                                     24/7 Support
                                 </h3>
                                 <p class="feature__para">
@@ -253,7 +257,6 @@
         <section id="values">
             <div class="container">
                 <div class="row">
-                   <div class="values">
                     <div class="values__description">
                         <h4 class="section__tag">
                             <span class="purple"> VALUES</span>
@@ -293,14 +296,10 @@
                             </div>
                         </div>
                         <button class="values__description-btn">Learn More</button>
-
-
                     </div>
-
                         <figure class="values__img--wrapper">
                             <img class="values__img" src="/assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Values Illustration">
                         </figure> 
-                </div>
             </div>
         </section>
         <section id="pricing">
@@ -316,7 +315,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                     <div class="plans">
-                        <div class="plan">
+                        <div class="plan" id="personal">
                             <div class="plan__stripe"></div>
                             <div class="plan__top">
                                 <div class="plan__name">
@@ -331,7 +330,7 @@
                             </div>
                             <div class="plan__middle">
                                 <div class="plan__audience">
-                                    For Individuals
+                                    Individuals
                                 </div>
                                 <div class="plan__feature">
                                     30 Templates
@@ -350,7 +349,7 @@
                                 <button class="plan__btn">BUY NOW</button> 
                             </div>
                         </div>
-                        <div class="plan">
+                        <div class="plan" id="business">
                             <div class="plan__stripe"></div>
                             <div class="plan__top">
                                 <div class="plan__name">
@@ -365,7 +364,7 @@
                             </div>
                             <div class="plan__middle">
                                 <div class="plan__audience">
-                                    For Small Businesses
+                                    Small Businesses
                                 </div>
                                 <div class="plan__feature">
                                     60 Templates
@@ -399,7 +398,7 @@
                             </div>
                             <div class="plan__middle">
                                 <div class="plan__audience">
-                                    For Large Companies
+                                    Large Companies
                                 </div>
                                 <div class="plan__feature">
                                     90 Templates
@@ -509,16 +508,16 @@
                     <div class="info__title">
                         MAIN
                     </div>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                     Blog
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         FAQs
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Support
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         About Us
                     </a>
                 </div>
@@ -526,16 +525,16 @@
                     <div class="info__title">
                         PRODUCT
                     </div>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Login
                     </a>
-                    <a href="#pricing" class="info__link link__hover-effect">
+                    <a href="#personal" class="info__link link__hover-effect">
                         Personal
                     </a>
-                    <a href="#pricing" class="info__link link__hover-effect">
-                        Bussiness
+                    <a href="#business" class="info__link link__hover-effect">
+                        Business
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Team
                     </a>
                 </div>
@@ -543,16 +542,16 @@
                     <div class="info__title">
                         PRESS
                     </div>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Logos
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Events
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="#testimonials" class="info__link link__hover-effect">
                         Stories
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Office
                     </a>
                 </div>
@@ -560,16 +559,16 @@
                     <div class="info__title">
                         TEAM
                     </div>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Career
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Founders
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Culture
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Onboarding
                     </a>
                 </div>
@@ -577,16 +576,16 @@
                     <div class="info__title">
                         LEGAL
                     </div>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         GDPR
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Privacy Policy
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Terms of Service
                     </a>
-                    <a href="" class="info__link link__hover-effect">
+                    <a href="javascript:void(0)" class="info__link link__hover-effect no__access">
                         Disclaimer
                     </a>
                 </div>
@@ -602,13 +601,13 @@
                     © 2024 Treact Inc. All rights reserved.
                 </div>
                 <div class="socials__links">
-                    <a href="#" class="social__link no__access">
+                    <a href="javascript:void(0)" class="social__link no__access">
                         <i class="fa-brands fa-facebook-f social__icon no__access"></i>
                     </a>
-                    <a href="#" class="social__link no__access">
+                    <a href="javascript:void(0)" class="social__link no__access">
                         <i class="fa-brands fa-twitter social__icon no__access"></i>
                     </a>
-                    <a href="#" class="social__link no__access">
+                    <a href="javascript:void(0)" class="social__link no__access">
                         <i class="fa-brands fa-youtube social__icon no__access"></i>
                     </a>
                 </div>
