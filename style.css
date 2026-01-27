@@ -38,6 +38,10 @@ body {
   color: #6415ff;
 }
 
+.no-access {
+  cursor: not-allowed;
+}
+
 section {
   padding: 0 32px;
   scroll-margin-top: -125px;
@@ -83,10 +87,6 @@ p {
   width: 60%;
   color: #7c8ba1;
   text-align: center;
-}
-
-.no__access {
-  cursor: not-allowed;
 }
 
 /* 
@@ -169,11 +169,11 @@ HOVER EFFECTS
 
 */
 
-.link__hover-effect {
+.link__hover--effect {
   position: relative;
 }
 
-.link__hover-effect:after {
+.link__hover--effect:after {
   cursor: pointer;
   content: "";
   position: absolute;
@@ -185,7 +185,7 @@ HOVER EFFECTS
   background-color: #6415ff;
 }
 
-.link__hover-effect:hover:after {
+.link__hover--effect:hover:after {
   width: 100%;
   left: 0;
 }
@@ -760,6 +760,14 @@ PRICING ↓
   scroll-margin-top: -140px;
 }
 
+#personal {
+  scroll-margin-top: 175px;
+}
+
+#business {
+  scroll-margin-top: 175px;
+}
+
 .pricing__para {
   text-align: center;
 }
@@ -1232,7 +1240,7 @@ footer {
   text-decoration: none;
 }
 
-.info__link.link__hover-effect:after {
+.info__link.link__hover--effect:after {
   background-color: #f7fafc;
 }
 
@@ -1705,11 +1713,11 @@ MOBILE RESPONSIVENESS ↓
   }
 
   #personal {
-    scroll-margin-top: 20px;
+    scroll-margin-top: 30px;
   }
 
   #business {
-    scroll-margin-top: 20px;
+    scroll-margin-top: 30px;
   }
 
   #pricing .row {
