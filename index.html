@@ -31,7 +31,7 @@
                 <button class="btn__menu" onclick="openMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="btn__menu__svg">
+                        class="btn__menu--svg">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -40,7 +40,7 @@
             </div>
         </nav>
         <div class="modal">
-            <button class="btn__menu btn__menu__close" onclick="closeMenu()">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="light___StyledCloseIcon-lj69nl-14 fASujC">
@@ -54,7 +54,7 @@
                 <a  href="#pricing" class="modal__link" onclick="closeMenu()">Pricing</a>
                 <a class="modal__link">Contact Us</a>
                 <a class="modal__link">Login</a>
-                <a class="modal__link modal__link__primary">Sign Up</a>
+                <a class="modal__link modal__link--primary">Sign Up</a>
             </div>
         </div>
 
@@ -70,20 +70,20 @@
                         <span class="title-line2">Templates</span>
                         <span class="purple">for you.</span>
                       </h1>
-                      <p class="header__description__para">
+                      <p class="header__description--para">
                         Our templates are easy to setup, understand, and customize.<br> Offering fully modular components with a variety of pages and components.
                       </p>
-                      <div class="header__description__email-form">
-                        <input class="header__description__email-input" type="email" placeholder="Your E-mail Address">
-                        <button class="header__description__email-btn">Get Started</button>
+                      <div class="header__email--form">
+                        <input class="header__email--input" type="email" placeholder="Your E-mail Address">
+                        <button class="header__email--btn">Get Started</button>
                       </div>
-                      <div class="header__description__customers">
-                        <p class="header__description__customers-para">OUR TRUSTED CUSTOMERS</p>
-                        <img class="header__description__customers-logo" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Customers Logo Strip">
+                      <div class="header__customers">
+                        <p class="header__customers--para">OUR TRUSTED CUSTOMERS</p>
+                        <img class="header__customers--logo" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Customers Logo Strip">
                       </div>
                     </div>
-                     <figure    class="header__figure-wrapper">
-                          <img class="header__figure__img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Header Image">
+                     <figure    class="header__figure--wrapper">
+                          <img class="header__figure--img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Header Image">
                       </figure>
                 </div>
         </header>
@@ -180,12 +180,12 @@
                         <p class="quality__para section__para">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nullam scelerisque aliquam odio et faucibus. 
                         </p>
-                        <button class="quality__description-btn">Learn More</button>
+                        <button class="quality__description--btn">Learn More</button>
                       </div>
-                      <figure class="quality__img-wrapper">
+                      <figure class="quality__img--wrapper">
                        <img class="quality__img" src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png">
-                      <i class="fa-solid fa-table-cells img-br-corner"></i>
-                      <i class="fa-solid fa-table-cells img-tl-corner"></i>
+                      <i class="fa-solid fa-table-cells img-bottomright"></i>
+                      <i class="fa-solid fa-table-cells img-topleft"></i>
                       </figure>
                     </div>
                 </div>
@@ -197,9 +197,9 @@
             <div class="container">
                 <div class="row">
                     <div class="steps">
-                        <figure class="steps__img-wrapper">
+                        <figure class="steps__img--wrapper">
                             <img class="steps__img" src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Steps Illustration">
-                            <i class="fa-solid fa-table-cells img-bt1"></i>
+                            <i class="fa-solid fa-table-cells img-topleft2"></i>
                         </figure>
                         <div class="steps__description">
                             <h4 class="section__tag">
@@ -457,22 +457,22 @@
                                 </div>
                                 <div class="testimonial__bottom">
                                     <div class="testimonial__profile">
-                                        <img class="testimonial__client-img" src="./assets/photo-1494790108377-be9c29b29330.avif" alt="Client Image">
-                                        <div class="testimonial__client-info">
-                                            <div class="testimonial__client-name">
+                                        <img class="testimonial__client--img" src="./assets/photo-1494790108377-be9c29b29330.avif" alt="Client Image">
+                                        <div class="testimonial__client--info">
+                                            <div class="testimonial__client--name">
                                                 Charlotte Hale
                                             </div>
-                                            <div class="testimonial__client-role">
+                                            <div class="testimonial__client--role">
                                                 Director, Delos Inc.
                                             </div>
                                         </div>
                                     </div>
                                         <div class="testimonial__buttons">
-                                            <button class="testimonial__btn testimonial__btn-left">
+                                            <button class="testimonial__btn testimonial__btn--left">
                                                 <i class="fa-solid fa-chevron-left btn__icon"></i>
                                             </button>
                                             <div class="divider"></div>
-                                            <button class="testimonial__btn testimonial__btn-right">
+                                            <button class="testimonial__btn testimonial__btn--right">
                                                 <i class="fa-solid fa-chevron-right btn__icon"></i>
                                             </button>
                                         </div>
@@ -592,7 +592,7 @@
             </div>
             <div class="footer__bottom">
                 <div class="footer__logo">
-                    <img class="footer__logo-img" src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="Logo">
+                    <img class="footer__logo--img" src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="Logo">
                     <div class="footer__logo-title">
                         Treact Inc.
                     </div>  
